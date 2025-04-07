@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "release": "auto shipit --base-branch=main"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -37,14 +38,14 @@
   },
   "name": "ds-alurabooks-dv",
   "author": "denise vieira",
-  "module": "dist/ds-alurabooks-base.esm.js",
+  "module": "dist/ds-alurabooks-dv.esm.js",
   "size-limit": [
     {
-      "path": "dist/ds-alurabooks-base.cjs.production.min.js",
+      "path": "dist/ds-alurabooks-dv.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/ds-alurabooks-base.esm.js",
+      "path": "dist/ds-alurabooks-dv.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -59,6 +60,7 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@types/styled-components": "^5.1.25",
+    "auto": "^11.3.0",
     "babel-loader": "^8.2.5",
     "husky": "^8.0.1",
     "react": "^18.2.0",
